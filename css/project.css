@@ -1,0 +1,237 @@
+/*  ~~ 메인 ~~ */
+
+body {
+	background-color: black;
+}
+
+.frame {
+	margin: 30px 150px 100px;
+	display: flex;
+	flex-direction: column;
+	/* 아래쪽으로 쌓임 */
+	animation: fade-in 6s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* navigator */
+.navigator {
+	display: flex;
+	flex-direction: row;
+	/* 컨테이너에 적용되는 속성: 양 옆으로 */
+	justify-content: space-between;
+	margin: 0;
+}
+
+li {
+	/* 라인 옆으로 나란히*/
+	display: inline;
+	margin: 17px;
+}
+
+ul {
+	margin: 0;
+}
+
+.site-name {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+.nav-menu {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+}
+
+/* 링크 없애기 */
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* 메뉴에 마우스 올렸을때 느릿하게 검게 되게하기 */
+a:hover {
+	color: black;
+	transition: 0.3s;
+}
+
+/* 프로필 섹션 */
+
+.profile-section {
+	color: white;
+	margin: 60px;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+}
+
+#profile {
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid #b2b2b2;
+	border-radius: 100%;
+}
+
+/* contact */
+/* 큰메뉴 */
+.introduction {
+	font-family: "Montserrat", sans-serif;
+	font-size: 50px;
+	color: #b2b2b2;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.introduction > h2 {
+	margin: 0px;
+	padding: 8px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 35px;
+	border-bottom: 2px solid #b2b2b2;
+	border-radius: 50%;
+}
+
+.contact-block {
+	color: white;
+	font-size: 16px;
+	margin-bottom: 80px;
+}
+
+.contact-block > ul {
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-block > ul > li {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	margin: 15px;
+}
+
+.skill {
+	width: 80px;
+	height: 70px;
+}
+
+.skill-block {
+	color: white;
+	margin-bottom: 80px;
+}
+
+.skill-block > ul {
+	margin: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.skill-block > ul > li {
+	display: flex;
+	flex-direction: column;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	margin: 15px;
+}
+
+.before-block {
+	color: white;
+	margin-bottom: 80px;
+}
+
+.before-block > ul {
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.before-block > ul > li {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	margin: 15px;
+}
+
+.edu-block {
+	color: white;
+	margin-bottom: 80px;
+}
+
+.edu-block > ul {
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.edu-block > ul > li {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	margin: 15px;
+}
+
+.detail-block {
+	color: white;
+	margin-bottom: 80px;
+}
+
+.detail-block > ul {
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.detail-block > ul > li {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	margin: 15px;
+}
+
+.detail-name {
+	font-size: 20px;
+	margin: 15px;
+}
+
+.tldus-block {
+	color: white;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.gif {
+	margin-bottom: 50px;
+}
+
+.git {
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.git > img {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	display: block;
+	margin-right: 10px;
+}

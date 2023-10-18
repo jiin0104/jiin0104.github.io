@@ -1,0 +1,111 @@
+body {
+	background-color: black;
+}
+
+.frame {
+	margin: 30px 150px 100px;
+	display: flex;
+	flex-direction: column;
+	/* 아래쪽으로 쌓임 */
+	animation: fade-in 6s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* navigator */
+.navigator {
+	display: flex;
+	flex-direction: row;
+	/* 컨테이너에 적용되는 속성: 양 옆으로 */
+	justify-content: space-between;
+	margin: 0;
+}
+
+li {
+	/* 라인 옆으로 나란히*/
+	display: inline;
+	margin: 17px;
+}
+
+ul {
+	margin: 0;
+}
+
+.site-name {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+.nav-menu {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+}
+
+/* 링크 없애기 */
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* 메뉴에 마우스 올렸을때 느릿하게 검게 되게하기 */
+a:hover {
+	color: black;
+	transition: 0.3s;
+}
+
+.join-block {
+	position: fixed;
+	top: 50%; /* 화면 세로 중앙에 위치시키기 위한 임의의 값 */
+	right: 80px; /* 화면 오른쪽에 위치시키려는 거리를 조절하세요 */
+	transform: translateY(-50%); /* 화면 세로 중앙에 정확히 위치시킵니다 */
+	color: white;
+}
+
+.git {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.git > img {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	display: block;
+	margin-right: 10px;
+}
+
+.button {
+	width: 100px;
+	height: 100px;
+}
+
+.join {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.join > img {
+	margin-left: 20px;
+}
+
+.block {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
