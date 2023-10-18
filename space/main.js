@@ -94,7 +94,7 @@ function Enemy() {
 function loadImage() {
 	//이미지 주소설정
 	backgroundImage = new Image();
-	backgroundImage.src = "images/background.png";
+	backgroundImage.src = "images/background.jpg";
 
 	spaceshipImage = new Image();
 	spaceshipImage.src = "images/spaceship.png";
